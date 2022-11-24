@@ -1,17 +1,18 @@
-import {
-  Page,
-  PageTitle
-} from "../components/styles"
-
-import {
-  Test,
-} from "../components/styles-temp"
+import React from "react";
+import "./loginform.css"
 
 export const PageLogin = () => {
   return (
-    <Page>
-      <PageTitle>Login</PageTitle>
-    </Page>
-  );
+    <div className="cover">
+      <h1>Login</h1>
+      <input type="text" placeholder="nome de usuário" />
+      <input type="password" placeholder="senha" />
+
+      <div className="login-btn">Login</div>
+      
+      <div className="alt-login"></div>
+
+    </div>
+  )
 }
 
